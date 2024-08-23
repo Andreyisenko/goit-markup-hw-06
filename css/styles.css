@@ -2,11 +2,6 @@
   display: none;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   font-family: Roboto, Raleway, sans-serif;
   color: #434455;
@@ -47,15 +42,31 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* common */
 .container {
   max-width: 320px;
   padding: 0 16px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+/* Header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
