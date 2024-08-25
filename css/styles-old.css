@@ -103,13 +103,7 @@ span {
   justify-content: center;
 }
 
-.section-two-list {
-  display: flex;
-  gap: 24px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
+
 .section-two-list-item {
   width: calc((100% - 72px) / 4);
 }
