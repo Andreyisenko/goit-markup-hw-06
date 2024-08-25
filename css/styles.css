@@ -250,10 +250,114 @@ height: 100%;
 position: absolute;
 top: 24px;
 right: 24px;
+width: 24px;
+  height: 24px;
+  fill:#2e2f42;
+  border-radius: 50%;
+  border: 1px solid #e7e9fc;
+  background-color: #fff;
+  line-height: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  border-color: transparent;
+  background-color: #404bbf;
+  border: none;
+}
+.mobile-menu-close:hover .icon-btn-close {
+  fill: #ffffff;
+}
+
+.mobile-menu-close:focus .icon-btn-close {
+  fill: #ffffff;
+}
+
 .mobile-menu-nav {
   margin-bottom: auto;
 }
+.list-nav-menu {
+display: flex;
+flex-direction: column;
+gap: 40px;
+}    
+.menu-mobile {
+cursor: auto;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: #2e2f42;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.menu-mobile:hover,
+  .menu-mobile:focus,
+  .menu-mobile.current {
+    color: #404bbf;
+  }
+  .addr-menu {
+  
+    display: block;
+  }
+  .addr-line-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+.addr-line-info-menu {
+  display: block;
+  color: #434455;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.addr-line-info-menu:hover,
+  .addr-line-info-menu:focus {
+    color: #4d5ae5;
+  }
+
+  .team-box-link-menu {
+    display: flex;
+    
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  
+  
+
+  .link-menu {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .team-box-svg {
+    fill: #f4f4fd;
+  }
+  .link-menu:hover,
+  .link-menu:focus {
+    background-color: #404bbf;
+  
+  }
+  
+  
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
