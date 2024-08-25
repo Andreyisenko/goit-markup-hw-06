@@ -228,8 +228,7 @@ span {
   pointer-events: none;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -238,21 +237,21 @@ span {
 }
 
 .mobile-menu-container {
-position: relative;
-padding-top: 72px;
-padding-bottom: 40px;
-display: flex;
-flex-direction: column;
-height: 100%;
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .mobile-menu-close {
-position: absolute;
-top: 24px;
-right: 24px;
-width: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
   height: 24px;
-  fill:#2e2f42;
+  fill: #2e2f42;
   border-radius: 50%;
   border: 1px solid #e7e9fc;
   background-color: #fff;
@@ -283,36 +282,34 @@ width: 24px;
   margin-bottom: auto;
 }
 .list-nav-menu {
-display: flex;
-flex-direction: column;
-gap: 40px;
-}    
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .menu-mobile {
-cursor: auto;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    font-weight: 700;
-    color: #2e2f42;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  cursor: auto;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-mobile:hover,
-  .menu-mobile:focus,
-  .menu-mobile.current {
-    color: #404bbf;
-  }
-  .addr-menu {
-  
-    display: block;
-  }
-  .addr-line-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 48px;
-  }
+.menu-mobile:focus,
+.menu-mobile.current {
+  color: #404bbf;
+}
+.addr-menu {
+  display: block;
+}
+.addr-line-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
 .addr-line-info-menu {
   display: block;
   color: #434455;
@@ -323,43 +320,119 @@ cursor: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .addr-line-info-menu:hover,
-  .addr-line-info-menu:focus {
-    color: #4d5ae5;
-  }
+.addr-line-info-menu:focus {
+  color: #4d5ae5;
+}
 
-  .team-box-link-menu {
-    display: flex;
-    
-    justify-content: flex-start;
-    gap: 40px;
-  }
-  
-  
+.team-box-link-menu {
+  display: flex;
 
-  .link-menu {
-    width: 40px;
-    height: 40px;
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  justify-content: flex-start;
+  gap: 40px;
+}
 
-  .team-box-svg {
-    fill: #f4f4fd;
-  }
-  .link-menu:hover,
-  .link-menu:focus {
-    background-color: #404bbf;
-  
-  }
-  
-  
+.link-menu {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-box-svg {
+  fill: #f4f4fd;
+}
+.link-menu:hover,
+.link-menu:focus {
+  background-color: #404bbf;
+}
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
+  }
+}
+
+/* section effect */
+
+.effect {
+  background-color: #2e2f42;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 72px;
+  padding-top: 72px;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.effect-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: #fff;
+  max-width: 216px;
+  margin: 72px auto;
+}
+.effect-btn {
+  font-family: 'Roboto', sans-serif;
+  background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.effect-btn:hover,
+.effect-btn:focus {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .effect {
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
+  .effect-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-top: 0;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+}
+@media screen and (min-width: 1158px) {
+  
+  .effect {
+    padding-bottom: 188px;
+    padding-top: 188px;
+  }
+  .effect-title {
+ 
+    margin-bottom: 48px;
   }
 }
