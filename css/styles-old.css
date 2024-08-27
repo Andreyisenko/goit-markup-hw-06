@@ -11,8 +11,6 @@
   margin-right: 76px;
 }
 
-
-
 span {
   color: #2e2f42;
   font-weight: 700;
@@ -22,12 +20,6 @@ span {
   display: flex;
   align-items: center;
 }
-
-
-
-
-
-
 
 .effect {
   background-color: #2e2f42;
@@ -45,6 +37,16 @@ span {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .effect {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
 }
 
 .effect-title {
@@ -102,7 +104,6 @@ span {
   align-items: center;
   justify-content: center;
 }
-
 
 .section-two-list-item {
   width: calc((100% - 72px) / 4);
@@ -208,11 +209,6 @@ span {
 .team-box-svg {
   fill: #f4f4fd;
 }
-
-
-
-
-
 
 .portfolio {
   padding-top: 120px;

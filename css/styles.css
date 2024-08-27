@@ -371,10 +371,19 @@ span {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mobile/people-office-mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .effect {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/people-office-mobile-2x.jpg);
+  }
 }
 .effect-title {
   font-weight: 700;
@@ -418,6 +427,11 @@ span {
     max-width: 768px;
     padding-bottom: 112px;
     padding-top: 112px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/laptop/people-office-laptop.jpg);
   }
   .effect-title {
     font-size: 56px;
@@ -426,15 +440,38 @@ span {
     max-width: 496px;
     margin-bottom: 36px;
   }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .effect {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/laptop/people-office-laptop-2x.jpg);
+    }
+  }
 }
 @media screen and (min-width: 1158px) {
   .effect {
     max-width: 1158px;
     padding-bottom: 188px;
     padding-top: 188px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   }
   .effect-title {
     margin-bottom: 48px;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .effect {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
   }
 }
 

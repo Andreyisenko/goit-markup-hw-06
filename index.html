@@ -203,8 +203,8 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img
-                src="./images/img-1.jpg"
+              <img srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
+                src="./images/img-1.jpg" 
                 class="team-list-img"
                 alt="img-1-мark-guerrero"
                 width="264"
@@ -244,7 +244,7 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
+              <img srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
                 src="./images/img-2.jpg"
                 class="team-list-img"
                 alt="img-2-tom-ford"
@@ -285,7 +285,7 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
+              <img srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                 src="./images/img-3.jpg"
                 class="team-list-img"
                 alt="img-3-camila-garcia"
@@ -326,7 +326,7 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
+              <img srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"
                 src="./images/img-4.jpg"
                 class="team-list-img"
                 alt="img-4-daniel-wilson"
@@ -378,6 +378,11 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="tomb">
+                <picture>
+                  <source srcset="./images/img-5.jpg 1x, ./images/img-5-2x.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/laptop/img-5-laptop.jpg 1x, ./images/laptop/img-5-laptop-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/mobile/img-5-mobile.jpg 1x, ./images/mobile/img-5-mobile-2x.jpg 2x" media="(max-width: 767px)">
+                </picture>
                 <img
                   src="./images/img-5.jpg"
                   class="portfolio-list-img"
