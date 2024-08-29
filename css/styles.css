@@ -465,7 +465,7 @@ span {
 }
 @media screen and (min-width: 1158px) {
   .effect {
-    max-width: 1158px;
+    max-width: 1440px;
     padding-bottom: 188px;
     padding-top: 188px;
     background-image: linear-gradient(
@@ -933,8 +933,7 @@ span {
     gap: 24px;
     row-gap: 72px;
     text-align: start;
-    padding-left: 108px;
-    padding-right: 108px;
+    width: 584px;
     justify-content: flex-start;
   }
   .foot-logo {
@@ -952,12 +951,18 @@ span {
 }
 
 @media screen and (min-width: 1158px) {
+  .foot {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .foot-cont {
     gap: 0px;
     row-gap: 0px;
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
+    width: 1158px;
   }
   .foot-sub {
     margin-left: auto;
